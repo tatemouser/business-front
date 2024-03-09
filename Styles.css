@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}    
+
+body, html {
+    overflow-x: hidden;
+}
+
+.main-content {
+    position: relative;
+}
+
+/*------------
+    HEADER
+ ------------*/
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+}
+
+.logo-container, .nav-container {
+   margin-left: 1vh;
+   margin-right: 1vh;
+}
+
+.logo-container {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.NavButton {
+    width: 5vh;
+}
+
+.SiteLogo {
+    width: 10vh;
+}
+
+
+.overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.overlay-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+    width: 100%;
+    background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    .overlay-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: left;  
+    }
+}
+
+
+
+
+
+
+.container {
+    background-color: rgb(130, 130, 130);
+}
+
+.wrapper {
+
+}
+
+.content {
+
+}
+
+.sidebar {
+
+} 
+

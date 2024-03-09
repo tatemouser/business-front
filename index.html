@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="Assets/stickLogo.png" alt="SiteLogo" class="SiteLogo">
+        </div>
+        <div class="nav-container" onclick="toggleOverlay()">
+            <img src="Assets/nav.png" alt="NavButton" class="NavButton">
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="overlay" id="overlay" onclick="toggleOverlay()">
+            <nav class="overlay-menu">
+                <a href="#">Products</a>
+                <a href="#">Partners</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- Your main content container -->
+            <section class="wrapper">
+                <!-- A section wrapper for specific content grouping -->
+    
+                <article id="home" class="content">
+                    <!-- Home Section Content Goes Here -->
+                    <h2>Home Section</h2>
+                    <p>Welcome to the Home section.</p>
+                </article>
+    
+                <article id="about" class="content">
+                    <!-- About Section Content Goes Here -->
+                    <h2>About Section</h2>
+                    <p>Learn more about us in the About section.</p>
+                </article>
+    
+                <article id="schedule" class="content">
+                    <!-- Schedule Section Content Goes Here -->
+                    <h2>Schedule Section</h2>
+                    <p>Check out our schedule in the Schedule section.</p>
+                </article>
+    
+                <article id="contact" class="content">
+                    <!-- Contact Section Content Goes Here -->
+                    <h2>Contact Section</h2>
+                    <p>Contact us in the Contact section.</p>
+                </article>
+    
+                <aside class="sidebar">
+                    <!-- Optional sidebar content goes here -->
+                </aside>
+    
+            </section>
+        </div>
+    </main>
+    
+
+    <footer>
+        <!-- Your footer content goes here (e.g., copyright information, links) -->
+    </footer>
+
+    <script>
+        function toggleOverlay() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = (overlay.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
