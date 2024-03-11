@@ -15,6 +15,49 @@ body, html {
     position: relative;
 }
 
+.container {
+    /* background-color: rgb(130, 130, 130); */
+}
+
+
+.wrapper {
+
+}
+
+.content {
+    padding: 2vh;
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white; /* Text color */
+    text-decoration: none;
+    border: 2px solid white; /* Border color */
+    border-radius: 20px; /* Border radius for rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.horizontal-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+}
+
+
 /*------------
     HEADER
  ------------*/
@@ -43,7 +86,6 @@ body, html {
     width: 10vh;
 }
 
-
 .overlay {
     display: none;
     position: absolute;
@@ -51,16 +93,67 @@ body, html {
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
-
-
 .overlay-menu {
     display: flex;
     justify-content: space-around;
     padding: 0 20px; 
     box-sizing: border-box; 
     width: 100%;
-    background-color: blue;
+    background-color: white;
 }
+
+/*------------
+    About Us
+ ------------*/
+#about {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 50vh;
+}
+
+
+
+ /*------------
+    Info
+ ------------*/
+#info {
+    color: white;
+    background-color: black;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    width: 25%; 
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.b2ox {
+    box-sizing: border-box;
+    width: 25%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .b2ox {
+        width: 100%; /* One box per row on smaller screens */
+    }
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
     .overlay-menu {
@@ -68,26 +161,15 @@ body, html {
         flex-direction: column;
         align-items: left;  
     }
-}
 
-
-
-
-
-
-.container {
-    background-color: rgb(130, 130, 130);
-}
-
-.wrapper {
 
 }
 
-.content {
-
+@media only screen and (max-width: 1000px) {
+    .info-block {
+        width: 100%;
+    }
 }
 
-.sidebar {
 
-} 
 

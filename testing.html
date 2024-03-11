@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            box-sizing: border-box;
+            width: 25%; /* Two boxes per row initially */
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                width: 100%; /* One box per row on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Text or image section 1</p>
+        <!-- Add your content here -->
+    </div>
+
+    <div class="box">
+        <p>Text or image section 2</p>
+        <!-- Add your content here -->
+    </div>
+
+    <div class="box">
+        <p>Text or image section 3</p>
+        <!-- Add your content here -->
+    </div>
+
+    <div class="box">
+        <p>Text or image section 4</p>
+        <!-- Add your content here -->
+    </div>
+    <!-- Add more boxes as needed -->
+</body>
+</html>

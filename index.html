@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
@@ -20,14 +19,14 @@
     <div class="main-content">
         <div class="overlay" id="overlay" onclick="toggleOverlay()">
             <nav class="overlay-menu">
-                <a href="#">Products</a>
-                <a href="#">Partners</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#info">Products</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </div>
+    
 
     <main>
         <div class="container">
@@ -37,32 +36,64 @@
     
                 <article id="home" class="content">
                     <!-- Home Section Content Goes Here -->
-                    <h2>Home Section</h2>
-                    <p>Welcome to the Home section.</p>
+                    <h2>Insert Video</h2>
                 </article>
-    
+                <hr>
                 <article id="about" class="content">
-                    <!-- About Section Content Goes Here -->
-                    <h2>About Section</h2>
-                    <p>Learn more about us in the About section.</p>
+                        <div class="vertical-container">
+                        <h2>It's a fitness tracker for your hardware equipment</h2>                        
+                        <div class="horizontal-container">
+                            <a href="#" class="button">Learn More</a>
+                            <a href="#" class="button">Water Video</a>
+                        </div>
+                    </div>
                 </article>
-    
-                <article id="schedule" class="content">
-                    <!-- Schedule Section Content Goes Here -->
-                    <h2>Schedule Section</h2>
-                    <p>Check out our schedule in the Schedule section.</p>
+                
+                <hr>
+                <article id="info" class="content">
+
+                    <div class="info-block">
+                        <h3>Unmatched Information</h3>
+                        <img src="Assets/nav.png" alt="NavButton" class="NavButton">
+                        <p>SmartTrash can monitor any type of trash compactor, as 
+                            well as balers, augur compactors, precrushers and compactors 
+                            with integrated bin or cart lifters. Basically, if you've got 
+                            it, we work with it.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Unmatched Information</h3>
+                        <img src="Assets/nav.png" alt="NavButton" class="NavButton">
+                        <p>SmartTrash collects more data on compator operations than 
+                            any other system: energy usage, cycle time, number of runs, 
+                            pickup times. It records, analyzes and helps you save money 
+                            and time.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Smart Than Humans</h3>
+                        <img src="Assets/nav.png" alt="NavButton" class="NavButton">
+                        <p>SmartTrash is more than just data, it's smart. It processes the 
+                            data it collects through a series of highly sophisticated 
+                            analytical and algorithmic tools to determine the optimal 
+                            time to empty the machine. You're welcome.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Built-in Reliability</h3>
+                        <img src="Assets/nav.png" alt="NavButton" class="NavButton">
+                        <p>SmartTrash makes scheduling pickups easy by communicating with 
+                            the hauler, issuing POs for pickups, closing out service orders 
+                            and confirming that pickups actually took place.</p>
+                    </div>
                 </article>
-    
+                
+                <hr>
                 <article id="contact" class="content">
                     <!-- Contact Section Content Goes Here -->
                     <h2>Contact Section</h2>
                     <p>Contact us in the Contact section.</p>
                 </article>
-    
-                <aside class="sidebar">
-                    <!-- Optional sidebar content goes here -->
-                </aside>
-    
             </section>
         </div>
     </main>
@@ -72,12 +103,7 @@
         <!-- Your footer content goes here (e.g., copyright information, links) -->
     </footer>
 
-    <script>
-        function toggleOverlay() {
-            var overlay = document.getElementById('overlay');
-            overlay.style.display = (overlay.style.display === 'none') ? 'block' : 'none';
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
