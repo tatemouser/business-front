@@ -16,6 +16,9 @@ body, html {
 }
 
 .container {
+    margin-left: 3vh;
+    margin-right: 3vh;
+
     /* background-color: rgb(130, 130, 130); */
 }
 
@@ -25,7 +28,6 @@ body, html {
 }
 
 .content {
-    padding: 2vh;
 }
 
 
@@ -69,8 +71,8 @@ body, html {
 }
 
 .logo-container, .nav-container {
-   margin-left: 1vh;
-   margin-right: 1vh;
+   /* margin-left: 1vh;
+   margin-right: 1vh; */
 }
 
 .logo-container {
@@ -130,29 +132,6 @@ body, html {
     width: 25%; 
 }
 
-/* body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-} */
-
-.b2ox {
-    box-sizing: border-box;
-    width: 25%; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-    .b2ox {
-        width: 100%; /* One box per row on smaller screens */
-    }
-}
-
-
 
 
 @media only screen and (max-width: 600px) {
@@ -170,6 +149,7 @@ body, html {
         width: 100%;
     }
 }
+
 
 
 
