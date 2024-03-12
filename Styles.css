@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #333;
+    background-color: gray;
 }    
 
 body, html {
@@ -60,6 +60,10 @@ body, html {
     padding: 20px; 
 }
 
+.SocialButton {
+    width: 5vh;
+}
+
 
 /*------------
     HEADER
@@ -75,6 +79,7 @@ body, html {
 .logo-container, .nav-container {
    /* margin-left: 1vh;
    margin-right: 1vh; */
+   margin: 1vh;
 }
 
 .logo-container {
@@ -83,7 +88,7 @@ body, html {
 }
 
 .NavButton {
-    width: 5vh;
+    width: 8vh;
 }
 
 .SiteLogo {
@@ -150,6 +155,49 @@ body, html {
 .info-block {
     width: 25%; 
 }
+
+/*------------
+    Footer
+ ------------*/
+
+
+
+
+
+.footer {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.footer-text {
+    margin: 3vh;
+    flex: 1; 
+}
+
+.footer-text a {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.footer-social {
+    margin: 3vh;
+    display: flex;
+    gap: 10px; 
+    align-self: flex-end;
+}
+
+.SocialButton {
+    height: 5vh;
+}
+
+
+
+
+
+
+
 
 
 
