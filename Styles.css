@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    background-color: gray;
+    background-color: black;
 }    
 
 body, html {
@@ -62,6 +62,27 @@ body, html {
 
 .SocialButton {
     width: 5vh;
+}
+
+.horizontal-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {  
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    color: #6c757d;
 }
 
 
@@ -157,12 +178,49 @@ body, html {
 }
 
 /*------------
-    Footer
+    Contact
  ------------*/
 
+.contact {
+    padding-top: 8vh;
+    height: 100vh;
+    background-color: white;
+}
+
+form {
+    padding-top: 2vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #dc3545; /* Adjust the color and thickness as needed */
+    outline: none; /* Remove the default focus outline */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.contact-button {
+    white-space: nowrap;
+    background-color: gray;
+    color: white;
+    padding: 1vh 3vh;
+    border: none;
+    border-radius: 4vh;
+    cursor: pointer;
+    font-size: 1em;
+}
 
 
-
+/*------------
+    Footer
+ ------------*/
 
 .footer {
     background-color: gray;
@@ -208,13 +266,32 @@ body, html {
         align-items: left;  
     }
 
-      
     #video-section video {
         width: 100%;
         height: 70%;
         object-fit: cover; /* Ensure the video fills the container while maintaining its aspect ratio */
         position: absolute;
         z-index: -1;
+    }
+
+    .contact-container {
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+
+    .h-captcha {
+        max-width: 300px;
+        overflow: hidden;
+    }
+
+    .contact-horizontal-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-vertical-layout {
+        display: flex;
+        flex-direction: column;
     }
 
 }
